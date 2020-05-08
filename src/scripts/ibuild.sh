@@ -12,7 +12,10 @@ make
 
 cd $dir/dotnet-app
 
+echo "Running DOTNET"
+echo "==========================================================="
 dotnet run
+echo "==========================================================="
 
 cd $dir
 echo "Finished."
