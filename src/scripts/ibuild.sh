@@ -1,8 +1,7 @@
 #!/bin/sh
 
 echo "Starting."
-ls /app
-dir=/app
+dir=`pwd`/src
 
 # Note: busybox doesn't have pushd/popd
 mkdir -p $dir/cpp-lib/build
