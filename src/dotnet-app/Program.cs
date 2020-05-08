@@ -8,7 +8,9 @@ using System.Runtime.InteropServices;namespace CppBind
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Output from C#");
             RunningInNativeCPP();
+            Console.WriteLine("Output from C# (again)");
         }
     }
 }
