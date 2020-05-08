@@ -16,3 +16,7 @@ Adapted from: https://medium.com/@xaviergeerinck/how-to-bind-c-code-with-dotnet-
 1. Install VSCode Remote Development extension. https://github.com/Microsoft/vscode-dev-containers
 2. Remote containers > Open locally (button in the lower left corner of VSCode).
 3. Run `./src/scripts/ibuild.sh` to build/run.
+
+A note about Git running in a Dev Container: Your git creds will automatically be shared
+if you're using a credential manager, i.e. `ssh-add ~/.ssh/id_rsa`. See details here:
+https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container
