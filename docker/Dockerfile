@@ -3,6 +3,7 @@ RUN apk --no-cache add cmake make gcc g++ libc-dev linux-headers
 
 RUN mkdir /app
 COPY src/ /app
-WORKDIR /app
+RUN chmod +x /app/scripts/ibuild.sh
 
+WORKDIR /app
 CMD /app/scripts/ibuild.sh
