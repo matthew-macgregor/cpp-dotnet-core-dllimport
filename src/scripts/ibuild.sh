@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/bin/ash
 
 echo "Starting."
-dir=`pwd`/src
+
+scriptdir="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+dir="$scriptdir/.."
+echo "Base dir is $dir"
 
 # Note: busybox doesn't have pushd/popd
 mkdir -p $dir/cpp-lib/build
