@@ -13,6 +13,10 @@ Adapted from: https://medium.com/@xaviergeerinck/how-to-bind-c-code-with-dotnet-
 
 ### Run in Remote Containers in VSCode
 
+Note 5/12/2020: Docker Desktop on Windows appears to have introduced some filesystem issues since
+2.2.x. Also, on upgrade to 2.3.0.2 (45183), the VSCode Remote Containers extension fails with an
+error that did not exist in the previous version. YMMV with this on Windows:
+
 1. Install VSCode Remote Development extension. https://github.com/Microsoft/vscode-dev-containers
 2. Remote containers > Open locally (button in the lower left corner of VSCode).
 3. Run `./src/scripts/ibuild.sh` to build/run.
